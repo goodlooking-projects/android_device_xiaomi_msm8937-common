@@ -176,7 +176,7 @@ DISABLE_RILD_OEM_HOOK := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
 
