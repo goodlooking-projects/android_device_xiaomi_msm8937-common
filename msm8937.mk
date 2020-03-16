@@ -94,6 +94,10 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(VENDOR_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libldacBT_dec
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
