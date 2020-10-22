@@ -150,11 +150,30 @@ on property:vendor.ims.DATA_DAEMON_STATUS=1
     setprop vendor.usb.rmnet.inst.name "rmnet"
     setprop vendor.usb.dpl.inst.name "dpl"
 
-service ppd /vendor/bin/mm-pp-dpps
-    class hal
+service vendor.ppd /system/vendor/bin/mm-pp-dpps
+    class late_start
+    disabled
     user system
-    group system graphics
     socket pps stream 0660 system system
+    group system graphics
+
+on property:init.svc.surfaceflinger=stopped
+    stop vendor.ppd
+
+on property:init.svc.surfaceflinger=running
+    start vendor.ppd
+
+on property:init.svc.surfaceflinger=restarting
+    stop vendor.ppd
+
+on property:init.svc.zygote=stopped
+    stop vendor.ppd
+
+on property:init.svc.zygote=running
+    start vendor.ppd
+
+on property:init.svc.zygote=restarting
+    stop vendor.ppd
 
 on property:init.svc.surfaceflinger=restarting
     restart vendor.hwcomposer-2-1
