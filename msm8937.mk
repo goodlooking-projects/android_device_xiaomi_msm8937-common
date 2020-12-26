@@ -169,7 +169,8 @@ PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
 
 PRODUCT_PACKAGES += \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libwifi-hal-ctrl
 
 # Healthd
 PRODUCT_PACKAGES += \
