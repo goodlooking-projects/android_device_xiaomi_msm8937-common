@@ -137,9 +137,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
 
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
 # Malloc
 MALLOC_SVELTE := true
 
