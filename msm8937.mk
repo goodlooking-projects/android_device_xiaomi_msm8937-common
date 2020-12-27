@@ -198,6 +198,9 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 
+# IPACM Data
+$(call inherit-product, device/xiaomi/msm8937-common/data-ipa-cfg-mgr/ipacm_vendor_product.mk)
+
 # IRQ balance
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
