@@ -17,6 +17,10 @@
 
 VENDOR_PATH := device/xiaomi/msm8937-common
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(VENDOR_PATH)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(VENDOR_PATH)/overlay
