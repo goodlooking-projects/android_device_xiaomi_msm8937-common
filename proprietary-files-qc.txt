@@ -360,10 +360,16 @@ vendor/lib/libOmxVideoDSMode.so|0bab1b2724a9454c36477250194805a222c3feb4
 vendor/lib/libOmxWmaDec.so|4285c349bf86b2efc50258658cbfb8ea51db50eb
 vendor/lib/libvqzip.so|867bc963c94e6812cc4d3a7fe093c3383557bcb9
 
-# Media OMX - from TA-1025_00WW 8.1.0 OPR1.170623.026
+# Media OMX - from - LA.UM.8.6.r1-01900-89xx.0
+vendor/lib/libAlacSwDec.so|339a78c17a0b7032e678a38deb523a0d403fdb41
+vendor/lib/libApeSwDec.so|013abb41d28f28bac9904562049c4460add11a47
+vendor/lib/libFlacSwDec.so|ff125da726e44764cf1f249f9214022f1c723ce6
 vendor/lib/libMpeg4SwEncoder.so|971eb18b4209287f7c078c082508ebc46c11de0e
-vendor/lib/libOmxSwVdec.so|c1375674bd80792581bb297525fe932ef050424b
-vendor/lib/libOmxSwVencMpeg4.so|024bde5984f312b398d0ae172df7d8fb2db279bc
+vendor/lib/libOmxSwVdec.so|3266ebc8499e38b21211942a2ec843c2eafe17ee
+vendor/lib/libOmxSwVencMpeg4.so|91487e1059c8d412751b9a9e2edc74f2eb2863b1
+vendor/lib/libswvdec.so|a240b48b4c374d9418197d0f3dc3fccad6eee909
+vendor/lib64/libswvdec.so|928e421d7f4a8c8d1b1e8a37e8dd37f46d2c86c4
+vendor/lib64/libvpplibrary.so|9801e062790202f7aa640c866415be71177908f7
 
 # Perf (configs) - from LA.UM.8.6.2.r1-08400-89xx.0
 vendor/etc/perf/commonresourceconfigs.xml|ac0cb850f89f688655bff3537aec1cba8302a7fa
