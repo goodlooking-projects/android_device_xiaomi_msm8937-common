@@ -28,6 +28,9 @@
 /dev/socket/fpce(/.*)?				u:object_r:fpce_socket:s0
 /sys/devices/(/platform)?/soc/soc:fpc1020(/.*)?		u:object_r:sysfs_fps_attr:s0
 
+# Fingerprint HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service.land		u:object_r:hal_fingerprint_land_exec:s0
+
 # For Goodix fingerprint
 /dev/gf66xx-spi                                 u:object_r:gx_fpd_device:s0
 /dev/ttyACM[0-9]*                               u:object_r:gx_fpd_device:s0
