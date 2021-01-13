@@ -46,7 +46,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \ 
+    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive \
+    persist.bluetooth.a2dp_offload.disabled=true \
+    persist.vendor.bluetooth.modem_nv_support=true \
+    vendor.bluetooth.soc=smd \
     vendor.qcom.bluetooth.soc=smd
 
 # Camera
