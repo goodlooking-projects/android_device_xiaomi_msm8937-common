@@ -81,8 +81,9 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 product/lib64/libaptX_encoder.so
 product/lib64/libaptXHD_encoder.so
 
-# Charger - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/bin/hvdcp_opti|7ee82dd264c7c349fb498111a61d5009ae9f0da2
+# Charger - from LA.UM.8.6.2.r1-08100-89xx.0
+vendor/bin/hvdcp_opti
+-sbin/charger:bin/chargeonlymode
 
 # Consumer IR - from santoni (Redmi 4X)
 lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so|53830d64d63d6cc405209d8d4cafea102dcd7b54
