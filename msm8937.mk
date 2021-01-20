@@ -160,6 +160,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    libcurl \
     libsensorndkbridge \
     libwifi-hal-ctrl
 
