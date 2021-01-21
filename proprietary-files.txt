@@ -407,10 +407,11 @@ vendor/lib/vendor.qti.hardware.perf@1.0.so
 vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib/vendor.qti.hardware.perf@2.1.so
 
-# Peripheral manager - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-vendor/bin/pm-proxy|56e9bdaa39270aa4456c9995a8a9e4618ba616a6
-vendor/bin/pm-service|7cbca1671529a805177f11f3f72defdbbe48a61c
-vendor/lib64/libperipheral_client.so|e2fbf94c589dbf8ae6c544a34441783ae9db3a08
+# Peripheral manager - from LA.UM.8.6.2.r1-08100-89xx.0
+vendor/bin/pm-proxy
+vendor/bin/pm-service
+vendor/lib/libperipheral_client.so
+vendor/lib64/libperipheral_client.so
 
 # Power-off alarm - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk|3fbc64ee84b17eaaf5f9002b58f4615216de0389
