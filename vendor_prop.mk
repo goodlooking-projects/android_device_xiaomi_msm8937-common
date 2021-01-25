@@ -92,6 +92,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
+    debug.enable.sglscale=1 \
     debug.gralloc.enable_fb_ubwc=1 \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.disable_backpressure=1
@@ -101,11 +102,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.recomputecrop=0 \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
+    persist.hwc.mdpcomp.enable=true \
     persist.hwc.enable_vds=1 \
     persist.sys.wfd.virtual=0 \
     sdm.debug.disable_rotator_split=1 \
     vendor.display.disable_skip_validate=1 \
-    sdm.perf_hint_window=50
+    sdm.perf_hint_window=50 \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -124,10 +128,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.vidc.enc.disable.pq=true \
     vendor.vidc.enc.narrow.searchrange=1 \
     vendor.video.disable.ubwc=1
-
-# Memory optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true
 
 # Nitz
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -168,7 +168,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
-    ro.surface_flinger.max_virtual_display_dimension=4096
+    ro.surface_flinger.max_virtual_display_dimension=4096 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    debug.sf.early_phase_offset_ns=11600000 \
+    debug.sf.early_app_phase_offset_ns=11600000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000 \
+    debug.sf.phase_offset_threshold_for_next_vsync_ns=11600000 \
+    ro.surface_flinger.protected_contents=true
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
